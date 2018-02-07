@@ -10,7 +10,7 @@ PODS:
   - SkyFloatingLabelTextField (3.4.0)
   - SwiftDate (4.3.0)
   - SwiftyStoreKit (0.12.1)
-  - UIColor_Hex_Swift (4.0.1)
+  - UIColor_Hex_Swift (2.3)
   - UIImageViewAlignedSwift (0.4.1)
   - UIScrollView-InfiniteScroll (1.0.2)
 
@@ -25,7 +25,7 @@ DEPENDENCIES:
   - SkyFloatingLabelTextField
   - SwiftDate (~> 4.3.0)
   - SwiftyStoreKit
-  - UIColor_Hex_Swift
+  - UIColor_Hex_Swift (~> 2.1)
   - UIImageViewAlignedSwift (~> 0.4.1)
   - UIScrollView-InfiniteScroll (~> 1.0.0)
 
@@ -40,10 +40,10 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SwiftDate: 64e2312711c5c506f7b51794308ce91f19eb494a
   SwiftyStoreKit: 98742f9d7941ecaca0f248de0f49c5ecf585bc95
-  UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
+  UIColor_Hex_Swift: 18bb48e9f1ed16c87f4ea7bf7e03853b43030812
   UIImageViewAlignedSwift: e72ef2a85a75a01d19b4509ac92a3bdb872cd73c
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: 9561f69cf35124431322a40e7d8f780462aaf2eb
+PODFILE CHECKSUM: 17d5e4f9cd9d5817f85276951217b015ee94ce61
 
 COCOAPODS: 1.4.0

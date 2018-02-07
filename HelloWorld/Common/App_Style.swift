@@ -6,8 +6,8 @@
 //  Copyright © 2018 Allan Nava. All rights reserved.
 //
 import Foundation
-import UIKit
 import UIColor_Hex_Swift
+import UIKit
 
 enum AppStyle {
     enum Font{

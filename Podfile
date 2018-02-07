@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
@@ -8,7 +8,7 @@ target 'HelloWorld' do
     pod 'KeychainAccess'
     pod 'EZAlertController'
     pod 'SwiftyStoreKit'
-    pod 'UIColor_Hex_Swift'
+    pod 'UIColor_Hex_Swift', '~> 2.1'
     pod 'PureLayout'
     pod 'UIImageViewAlignedSwift', '~> 0.4.1'
     pod 'SkyFloatingLabelTextField'
@@ -16,5 +16,4 @@ target 'HelloWorld' do
     pod 'Skeleton'
     pod 'UIScrollView-InfiniteScroll', '~> 1.0.0'
     pod 'SwiftDate', '~> 4.3.0'
-
 end
