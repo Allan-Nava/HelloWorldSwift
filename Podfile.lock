@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireNetworkActivityLogger (2.2.0):
+    - Alamofire (~> 4.0)
+  - DZNEmptyDataSet (1.8.1)
+  - EZAlertController (3.2)
+  - KeychainAccess (3.1.0)
+  - PureLayout (3.0.2)
+  - Skeleton (0.1.2)
+  - SkyFloatingLabelTextField (3.4.0)
+  - SwiftDate (4.3.0)
+  - SwiftyStoreKit (0.12.1)
+  - UIColor_Hex_Swift (4.0.1)
+  - UIImageViewAlignedSwift (0.4.1)
+  - UIScrollView-InfiniteScroll (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireNetworkActivityLogger (~> 2.0)
+  - DZNEmptyDataSet
+  - EZAlertController
+  - KeychainAccess
+  - PureLayout
+  - Skeleton
+  - SkyFloatingLabelTextField
+  - SwiftDate (~> 4.3.0)
+  - SwiftyStoreKit
+  - UIColor_Hex_Swift
+  - UIImageViewAlignedSwift (~> 0.4.1)
+  - UIScrollView-InfiniteScroll (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireNetworkActivityLogger: a7ae1842988b3f6248a49213268375bd27b515f0
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EZAlertController: 633be01320bed47720be54054df47667d61c2481
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Skeleton: 0d2941ce8d24f60a7e85ee39e55203256300b538
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
+  SwiftDate: 64e2312711c5c506f7b51794308ce91f19eb494a
+  SwiftyStoreKit: 98742f9d7941ecaca0f248de0f49c5ecf585bc95
+  UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
+  UIImageViewAlignedSwift: e72ef2a85a75a01d19b4509ac92a3bdb872cd73c
+  UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
+
+PODFILE CHECKSUM: c84dbd39eda6babad3a807152c55798432634c6d
+
+COCOAPODS: 1.4.0
