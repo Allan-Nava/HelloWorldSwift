@@ -7,8 +7,7 @@
 //
 import Foundation
 import UIKit
-//import UIColor_Hex_Swift
-
+import UIColor_Hex_Swift
 
 enum AppStyle {
     enum Font{
