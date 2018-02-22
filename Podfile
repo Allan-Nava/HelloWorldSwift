@@ -8,7 +8,7 @@ target 'HelloWorld' do
     pod 'KeychainAccess'
     pod 'EZAlertController'
     pod 'SwiftyStoreKit'
-    pod 'UIColor_Hex_Swift', '~> 2.1'
+    pod 'UIColor_Hex_Swift', '~> 4.0.1
     pod 'PureLayout'
     pod 'UIImageViewAlignedSwift', '~> 0.4.1'
     pod 'SkyFloatingLabelTextField'

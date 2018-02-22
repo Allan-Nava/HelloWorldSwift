@@ -8,15 +8,18 @@
 
 import UIKit
 
-/// A view that contains a `GradientView`. Useful for sliding a `CAGradientLayer` without affecting the bottom-most `CALayer`.
+/// A view that contains a `GradientView`. Useful for sliding a `CAGradientLayer` without
+/// affecting the bottom-most `CALayer`.
 public class GradientContainerView: UIView {
   fileprivate let gradientView = GradientView(frame: .zero)
   
+  /// :nodoc:
   override public init(frame: CGRect) {
     super.init(frame: frame)
     setUpGradientView()
   }
   
+  /// :nodoc:
   required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setUpGradientView()

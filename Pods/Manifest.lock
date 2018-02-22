@@ -6,10 +6,10 @@ PODS:
   - EZAlertController (3.2)
   - KeychainAccess (3.1.0)
   - PureLayout (3.0.2)
-  - Skeleton (0.1.2)
+  - Skeleton (0.2.2)
   - SkyFloatingLabelTextField (3.4.0)
   - SwiftDate (4.3.0)
-  - SwiftyStoreKit (0.12.1)
+  - SwiftyStoreKit (0.13.0)
   - UIColor_Hex_Swift (2.3)
   - UIImageViewAlignedSwift (0.4.1)
   - UIScrollView-InfiniteScroll (1.0.2)
@@ -36,10 +36,10 @@ SPEC CHECKSUMS:
   EZAlertController: 633be01320bed47720be54054df47667d61c2481
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  Skeleton: 0d2941ce8d24f60a7e85ee39e55203256300b538
+  Skeleton: ad6bff17deb4c8a1e037140a37a817bd6dcade4c
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SwiftDate: 64e2312711c5c506f7b51794308ce91f19eb494a
-  SwiftyStoreKit: 98742f9d7941ecaca0f248de0f49c5ecf585bc95
+  SwiftyStoreKit: df6a58aba530128e1c5d5ae4fe7d191e5ac50d5d
   UIColor_Hex_Swift: 18bb48e9f1ed16c87f4ea7bf7e03853b43030812
   UIImageViewAlignedSwift: e72ef2a85a75a01d19b4509ac92a3bdb872cd73c
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
