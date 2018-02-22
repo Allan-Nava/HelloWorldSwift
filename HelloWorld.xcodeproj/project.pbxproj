@@ -21,7 +21,6 @@
 		9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE697B202C2FCD00B8AC62 /* HomeViewModel.swift */; };
 		9DE70266202B9A860071D470 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE70265202B9A860071D470 /* HomeContract.swift */; };
 		9DE7026E202B9B530071D470 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7026D202B9B530071D470 /* HomeRouter.swift */; };
-		C37E673276AB53E63B93C4C6 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638C1854A62C7A538BFD1B4F /* Pods_HelloWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +127,6 @@
 /* Begin PBXFileReference section */
 		11D88FB4E33120906E192F5C /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		42E05050527587145D7779A2 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
-		638C1854A62C7A538BFD1B4F /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F963F202B8FD200BAFA90 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F9642202B8FD200BAFA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D0F9644202B8FD200BAFA90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37E673276AB53E63B93C4C6 /* Pods_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				9D5F71FA203EA9590084B4F8 /* Pods.xcodeproj */,
-				638C1854A62C7A538BFD1B4F /* Pods_HelloWorld.framework */,
 				9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */,
 			);
 			name = Frameworks;
