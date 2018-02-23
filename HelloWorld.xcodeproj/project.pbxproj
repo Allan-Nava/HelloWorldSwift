@@ -21,6 +21,13 @@
 		9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE697B202C2FCD00B8AC62 /* HomeViewModel.swift */; };
 		9DE70266202B9A860071D470 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE70265202B9A860071D470 /* HomeContract.swift */; };
 		9DE7026E202B9B530071D470 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7026D202B9B530071D470 /* HomeRouter.swift */; };
+		9DF119AA203F6E0900EEDFB1 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119A9203F6E0900EEDFB1 /* Video.swift */; };
+		9DF119BB203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119BA203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift */; };
+		9DF119C2203F701800EEDFB1 /* BaseVideoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119C1203F701800EEDFB1 /* BaseVideoDataManager.swift */; };
+		9DF119C4203F703C00EEDFB1 /* BaseVideoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119C3203F703C00EEDFB1 /* BaseVideoInteractor.swift */; };
+		9DF119C6203F70C300EEDFB1 /* BaseVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119C5203F70C300EEDFB1 /* BaseVideoPresenter.swift */; };
+		9DF119C8203F70D700EEDFB1 /* BaseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF119C7203F70D700EEDFB1 /* BaseVideoViewController.swift */; };
+		C8F129089A1A40E62D9FF0AF /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92676A7CD0523B95A0C2336D /* Pods_HelloWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +134,7 @@
 /* Begin PBXFileReference section */
 		11D88FB4E33120906E192F5C /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		42E05050527587145D7779A2 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		92676A7CD0523B95A0C2336D /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F963F202B8FD200BAFA90 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F9642202B8FD200BAFA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D0F9644202B8FD200BAFA90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,12 @@
 		9DCE697B202C2FCD00B8AC62 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9DE70265202B9A860071D470 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		9DE7026D202B9B530071D470 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		9DF119A9203F6E0900EEDFB1 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9DF119BA203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoModuleContracts.swift; sourceTree = "<group>"; };
+		9DF119C1203F701800EEDFB1 /* BaseVideoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoDataManager.swift; sourceTree = "<group>"; };
+		9DF119C3203F703C00EEDFB1 /* BaseVideoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoInteractor.swift; sourceTree = "<group>"; };
+		9DF119C5203F70C300EEDFB1 /* BaseVideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoPresenter.swift; sourceTree = "<group>"; };
+		9DF119C7203F70D700EEDFB1 /* BaseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F129089A1A40E62D9FF0AF /* Pods_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,7 @@
 			children = (
 				9D5F71FA203EA9590084B4F8 /* Pods.xcodeproj */,
 				9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */,
+				92676A7CD0523B95A0C2336D /* Pods_HelloWorld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				9D0F967F202B97A600BAFA90 /* User.swift */,
+				9DF119A9203F6E0900EEDFB1 /* Video.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +272,7 @@
 		9D0F967E202B976800BAFA90 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9DF119B9203F6F3C00EEDFB1 /* BaseVideoModule */,
 				9DE70264202B9A6C0071D470 /* Home */,
 				9DE70263202B9A530071D470 /* User */,
 			);
@@ -352,6 +370,58 @@
 		9DE7026C202B9AF20071D470 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DF119B9203F6F3C00EEDFB1 /* BaseVideoModule */ = {
+			isa = PBXGroup;
+			children = (
+				9DF119C0203F6FFB00EEDFB1 /* View */,
+				9DF119BF203F6FF500EEDFB1 /* Presenter */,
+				9DF119BE203F6FEE00EEDFB1 /* Interactor */,
+				9DF119BD203F6FE900EEDFB1 /* Router */,
+				9DF119BC203F6FE200EEDFB1 /* DataManager */,
+				9DF119BA203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift */,
+			);
+			path = BaseVideoModule;
+			sourceTree = "<group>";
+		};
+		9DF119BC203F6FE200EEDFB1 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9DF119C1203F701800EEDFB1 /* BaseVideoDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		9DF119BD203F6FE900EEDFB1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9DF119BE203F6FEE00EEDFB1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9DF119C3203F703C00EEDFB1 /* BaseVideoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9DF119BF203F6FF500EEDFB1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9DF119C5203F70C300EEDFB1 /* BaseVideoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9DF119C0203F6FFB00EEDFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DF119C7203F70D700EEDFB1 /* BaseVideoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -627,15 +697,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF119C2203F701800EEDFB1 /* BaseVideoDataManager.swift in Sources */,
 				9DE70266202B9A860071D470 /* HomeContract.swift in Sources */,
 				9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */,
+				9DF119C4203F703C00EEDFB1 /* BaseVideoInteractor.swift in Sources */,
+				9DF119C8203F70D700EEDFB1 /* BaseVideoViewController.swift in Sources */,
 				9D0F9645202B8FD200BAFA90 /* ViewController.swift in Sources */,
 				9DE7026E202B9B530071D470 /* HomeRouter.swift in Sources */,
 				9D0F9674202B93E900BAFA90 /* App_Style.swift in Sources */,
+				9DF119BB203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift in Sources */,
 				9D0F967A202B96DE00BAFA90 /* Endpoints.swift in Sources */,
 				9D0F9680202B97A600BAFA90 /* User.swift in Sources */,
 				9DCE697A202C2F9700B8AC62 /* HomeViewModelItem.swift in Sources */,
 				9D0F9643202B8FD200BAFA90 /* AppDelegate.swift in Sources */,
+				9DF119AA203F6E0900EEDFB1 /* Video.swift in Sources */,
+				9DF119C6203F70C300EEDFB1 /* BaseVideoPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

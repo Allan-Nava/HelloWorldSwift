@@ -9,9 +9,9 @@
 import UIKit
 
 protocol HomeViewProtocol: BaseVideoViewInterface {
-    var presenter: HomePresenterProtocol! { get set }
+//    var presenter: HomePresenterProtocol! { get set }
     func showHome(_ home: HomeViewModel)
-    func refreshCellWithEvent(_ event: Event)
+//    func refreshCellWithEvent(_ event: Event)
     func userChangedRefresh()
 }
 

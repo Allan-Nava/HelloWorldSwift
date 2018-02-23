@@ -13,10 +13,11 @@ import UIKit
  UnableToScanHexValue:      "Scan hex error"
  MismatchedHexStringLength: "Invalid RGB string, number of characters after '#' should be either 3, 4, 6 or 8"
  */
-public enum UIColorInputError : ErrorType {
-    case MissingHashMarkAsPrefix,
-    UnableToScanHexValue,
-    MismatchedHexStringLength
+public enum UIColorInputError : Error {
+    case missingHashMarkAsPrefix,
+    unableToScanHexValue,
+    mismatchedHexStringLength,
+    unableToOutputHexStringForWideDisplayColor
 }
 
 extension UIColor {
@@ -84,16 +85,17 @@ extension UIColor {
      */
     public convenience init(rgba_throws rgba: String) throws {
         guard rgba.hasPrefix("#") else {
-            throw UIColorInputError.MissingHashMarkAsPrefix
+            throw UIColorInputError.missingHashMarkAsPrefix
         }
         
-        guard let hexString: String = rgba.substringFromIndex(rgba.startIndex.advancedBy(1)),
-            var   hexValue:  UInt32 = 0
-            where NSScanner(string: hexString).scanHexInt(&hexValue) else {
-                throw UIColorInputError.UnableToScanHexValue
+        let hexString: String = String(rgba[String.Index.init(encodedOffset: 1)...])
+        var hexValue:  UInt32 = 0
+        
+        guard Scanner(string: hexString).scanHexInt32(&hexValue) else {
+            throw UIColorInputError.unableToScanHexValue
         }
         
-        switch (hexString.characters.count) {
+        switch (hexString.count) {
         case 3:
             self.init(hex3: UInt16(hexValue))
         case 4:
@@ -103,7 +105,7 @@ extension UIColor {
         case 8:
             self.init(hex8: hexValue)
         default:
-            throw UIColorInputError.MismatchedHexStringLength
+            throw UIColorInputError.mismatchedHexStringLength
         }
     }
     
@@ -112,30 +114,67 @@ extension UIColor {
      
      - parameter rgba: String value.
      */
-    public convenience init(rgba: String, defaultColor: UIColor = UIColor.clearColor()) {
+    public convenience init(_ rgba: String, defaultColor: UIColor = UIColor.clear) {
         guard let color = try? UIColor(rgba_throws: rgba) else {
-            self.init(CGColor: defaultColor.CGColor)
+            self.init(cgColor: defaultColor.cgColor)
             return
         }
-        self.init(CGColor: color.CGColor)
+        self.init(cgColor: color.cgColor)
     }
     
     /**
-     Hex string of a UIColor instance.
+     Hex string of a UIColor instance, throws error.
      
-     - parameter rgba: Whether the alpha should be included.
+     - parameter includeAlpha: Whether the alpha should be included.
      */
-    public func hexString(includeAlpha: Bool) -> String {
+    public func hexStringThrows(_ includeAlpha: Bool = true) throws -> String  {
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
         var a: CGFloat = 0
         self.getRed(&r, green: &g, blue: &b, alpha: &a)
         
+        guard r >= 0 && r <= 1 && g >= 0 && g <= 1 && b >= 0 && b <= 1 else {
+            throw UIColorInputError.unableToOutputHexStringForWideDisplayColor
+        }
+        
         if (includeAlpha) {
             return String(format: "#%02X%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255), Int(a * 255))
         } else {
             return String(format: "#%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255))
+        }
+    }
+    
+    /**
+     Hex string of a UIColor instance, fails to empty string.
+     
+     - parameter includeAlpha: Whether the alpha should be included.
+     */
+    public func hexString(_ includeAlpha: Bool = true) -> String  {
+        guard let hexString = try? hexStringThrows(includeAlpha) else {
+            return ""
+        }
+        return hexString
+    }
+}
+
+extension String {
+    /**
+     Convert argb string to rgba string.
+     */
+    public func argb2rgba() -> String? {
+        guard self.hasPrefix("#") else {
+            return nil
+        }
+        
+        let hexString: String = String(self[self.index(self.startIndex, offsetBy: 1)...])
+        switch hexString.count {
+        case 4:
+          return "#\(String(hexString[self.index(self.startIndex, offsetBy: 1)...]))\(String(hexString[..<self.index(self.startIndex, offsetBy: 1)]))"
+        case 8:
+          return "#\(String(hexString[self.index(self.startIndex, offsetBy: 2)...]))\(String(hexString[..<self.index(self.startIndex, offsetBy: 2)]))"
+        default:
+          return nil
         }
     }
 }
