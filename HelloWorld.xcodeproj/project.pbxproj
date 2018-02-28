@@ -17,6 +17,7 @@
 		9D0F967A202B96DE00BAFA90 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F9679202B96DE00BAFA90 /* Endpoints.swift */; };
 		9D0F9680202B97A600BAFA90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F967F202B97A600BAFA90 /* User.swift */; };
 		9D5F71F9203EA94B0084B4F8 /* HelloWorld.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */; };
+		9D836FE12047436D004D49BC /* StoryboardSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D836FE02047436D004D49BC /* StoryboardSingleton.swift */; };
 		9DCE697A202C2F9700B8AC62 /* HomeViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE6979202C2F9700B8AC62 /* HomeViewModelItem.swift */; };
 		9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE697B202C2FCD00B8AC62 /* HomeViewModel.swift */; };
 		9DE70266202B9A860071D470 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE70265202B9A860071D470 /* HomeContract.swift */; };
@@ -150,6 +151,7 @@
 		9D0F967F202B97A600BAFA90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = HelloWorld.xcworkspace; sourceTree = "<group>"; };
 		9D5F71FA203EA9590084B4F8 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		9D836FE02047436D004D49BC /* StoryboardSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSingleton.swift; sourceTree = "<group>"; };
 		9DCE6979202C2F9700B8AC62 /* HomeViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelItem.swift; sourceTree = "<group>"; };
 		9DCE697B202C2FCD00B8AC62 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9DE70265202B9A860071D470 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
@@ -249,6 +251,8 @@
 		9D0F967B202B971A00BAFA90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D836FF220474507004D49BC /* Font */,
+				9D836FF0204744DF004D49BC /* UXClasses */,
 				9D0F967C202B972C00BAFA90 /* Errors */,
 				9D0F967D202B975000BAFA90 /* StoryboardHandler */,
 			);
@@ -265,6 +269,7 @@
 		9D0F967D202B975000BAFA90 /* StoryboardHandler */ = {
 			isa = PBXGroup;
 			children = (
+				9D836FE02047436D004D49BC /* StoryboardSingleton.swift */,
 			);
 			path = StoryboardHandler;
 			sourceTree = "<group>";
@@ -298,6 +303,28 @@
 				9D5F7226203EA9590084B4F8 /* UIScrollView_InfiniteScroll.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9D836FF0204744DF004D49BC /* UXClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9D836FF1204744EA004D49BC /* Loading State */,
+			);
+			path = UXClasses;
+			sourceTree = "<group>";
+		};
+		9D836FF1204744EA004D49BC /* Loading State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Loading State";
+			sourceTree = "<group>";
+		};
+		9D836FF220474507004D49BC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		9DCE6978202C2F5E00B8AC62 /* Home Types */ = {
@@ -697,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D836FE12047436D004D49BC /* StoryboardSingleton.swift in Sources */,
 				9DF119C2203F701800EEDFB1 /* BaseVideoDataManager.swift in Sources */,
 				9DE70266202B9A860071D470 /* HomeContract.swift in Sources */,
 				9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */,

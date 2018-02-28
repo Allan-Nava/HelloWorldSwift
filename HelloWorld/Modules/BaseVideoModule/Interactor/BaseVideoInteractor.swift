@@ -9,6 +9,14 @@
 import UIKit
 
 class BaseVideoInteractor: NSObject, BaseVideoInputInteractor, BaseVideoDataManagerOutputProtocol {
+    func foundVideo(_ video: Video) {
+        print(video)
+    }
+    
+    func foundVideoFailedWithError(_ error: Error?) {
+        print(error ?? error ?? "error")
+    }
+    
     
     var output: BaseVideoOutputInteractor!
     // Dependency to handle Local Data Operations

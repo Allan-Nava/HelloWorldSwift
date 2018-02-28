@@ -17,7 +17,7 @@ class User: NSObject, NSCoding {
         
     }
     required convenience init(coder aDecoder: NSCoder) {
-        var dictionary : [String: Any] = [
+        var _ : [String: Any] = [
             "id" : aDecoder.decodeInteger(forKey: "id")]
     }
     

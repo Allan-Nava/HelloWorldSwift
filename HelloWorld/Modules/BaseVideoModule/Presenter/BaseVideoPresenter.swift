@@ -9,6 +9,14 @@
 import UIKit
 
 class BaseVideoPresenter: NSObject, BaseVideoPresenterInterface, BaseVideoOutputInteractor {
+    func foundVideo(_ video: Video) {
+        print(video)
+    }
+    
+    func errorLoadingVideo(_ errorString: String) {
+        print(errorString)
+    }
+    
 
     var baseRouter: BaseVideoWireFrame!
     
