@@ -16,6 +16,9 @@
 		9D0F9676202B950E00BAFA90 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F9675202B950E00BAFA90 /* Podfile */; };
 		9D0F967A202B96DE00BAFA90 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F9679202B96DE00BAFA90 /* Endpoints.swift */; };
 		9D0F9680202B97A600BAFA90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F967F202B97A600BAFA90 /* User.swift */; };
+		9D3E4093204AB39200B537D1 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4092204AB39200B537D1 /* BoxView.swift */; };
+		9D3E4095204AB47100B537D1 /* StateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4094204AB47100B537D1 /* StateCollectionView.swift */; };
+		9D3E4098204AB74300B537D1 /* StoryboardSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4097204AB74300B537D1 /* StoryboardSingleton.swift */; };
 		9D5F71F9203EA94B0084B4F8 /* HelloWorld.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */; };
 		9D836FE12047436D004D49BC /* StoryboardSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D836FE02047436D004D49BC /* StoryboardSingleton.swift */; };
 		9DCE697A202C2F9700B8AC62 /* HomeViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE6979202C2F9700B8AC62 /* HomeViewModelItem.swift */; };
@@ -149,6 +152,9 @@
 		9D0F9678202B968B00BAFA90 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9D0F9679202B96DE00BAFA90 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		9D0F967F202B97A600BAFA90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9D3E4092204AB39200B537D1 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
+		9D3E4094204AB47100B537D1 /* StateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCollectionView.swift; sourceTree = "<group>"; };
+		9D3E4097204AB74300B537D1 /* StoryboardSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSingleton.swift; sourceTree = "<group>"; };
 		9D5F71F8203EA94B0084B4F8 /* HelloWorld.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = HelloWorld.xcworkspace; sourceTree = "<group>"; };
 		9D5F71FA203EA9590084B4F8 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		9D836FE02047436D004D49BC /* StoryboardSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSingleton.swift; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		9D0F967B202B971A00BAFA90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D3E4096204AB72700B537D1 /* StoryBoardHandler */,
 				9D836FF220474507004D49BC /* Font */,
 				9D836FF0204744DF004D49BC /* UXClasses */,
 				9D0F967C202B972C00BAFA90 /* Errors */,
@@ -284,6 +291,22 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		9D3E4083204AB34B00B537D1 /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
+		9D3E4096204AB72700B537D1 /* StoryBoardHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9D3E4097204AB74300B537D1 /* StoryboardSingleton.swift */,
+			);
+			name = StoryBoardHandler;
+			path = UXClasses/StoryBoardHandler;
+			sourceTree = "<group>";
+		};
 		9D5F71FB203EA9590084B4F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,7 +331,10 @@
 		9D836FF0204744DF004D49BC /* UXClasses */ = {
 			isa = PBXGroup;
 			children = (
+				9D3E4083204AB34B00B537D1 /* EmptyState */,
 				9D836FF1204744EA004D49BC /* Loading State */,
+				9D3E4092204AB39200B537D1 /* BoxView.swift */,
+				9D3E4094204AB47100B537D1 /* StateCollectionView.swift */,
 			);
 			path = UXClasses;
 			sourceTree = "<group>";
@@ -729,12 +755,15 @@
 				9DE70266202B9A860071D470 /* HomeContract.swift in Sources */,
 				9DCE697C202C2FCD00B8AC62 /* HomeViewModel.swift in Sources */,
 				9DF119C4203F703C00EEDFB1 /* BaseVideoInteractor.swift in Sources */,
+				9D3E4093204AB39200B537D1 /* BoxView.swift in Sources */,
 				9DF119C8203F70D700EEDFB1 /* BaseVideoViewController.swift in Sources */,
+				9D3E4098204AB74300B537D1 /* StoryboardSingleton.swift in Sources */,
 				9D0F9645202B8FD200BAFA90 /* ViewController.swift in Sources */,
 				9DE7026E202B9B530071D470 /* HomeRouter.swift in Sources */,
 				9D0F9674202B93E900BAFA90 /* App_Style.swift in Sources */,
 				9DF119BB203F6F6500EEDFB1 /* BaseVideoModuleContracts.swift in Sources */,
 				9D0F967A202B96DE00BAFA90 /* Endpoints.swift in Sources */,
+				9D3E4095204AB47100B537D1 /* StateCollectionView.swift in Sources */,
 				9D0F9680202B97A600BAFA90 /* User.swift in Sources */,
 				9DCE697A202C2F9700B8AC62 /* HomeViewModelItem.swift in Sources */,
 				9D0F9643202B8FD200BAFA90 /* AppDelegate.swift in Sources */,
