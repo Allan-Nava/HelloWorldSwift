@@ -17,8 +17,11 @@ class User: NSObject, NSCoding {
         
     }
     required convenience init(coder aDecoder: NSCoder) {
-        var _ : [String: Any] = [
+        
+        let dictionary : [String: Any] =  [
+            
             "id" : aDecoder.decodeInteger(forKey: "id")]
+        self.init(dictionary: dictionary)
     }
     
     required public init(dictionary: Dictionary<String, Any>) {
